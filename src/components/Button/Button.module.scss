@@ -1,0 +1,31 @@
+@import "../../styles/variables.scss";
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  // min-height: $buttonHeightNormal;
+  min-height: 24px;
+  border: none;
+  border-radius: $borderRadius;
+  box-shadow: $boxShadow;
+  background-color: $primaryColor;
+  overflow: hidden;
+  &.secondary {
+    background-color: $secondaryColor;
+  }
+}
+
+.child {
+  margin: 0;
+  top: 389px;
+  left: 730px;
+  color: white;
+  font-weight: 400px;
+  font-size: 18px;
+  font-style: normal;
+  text-decoration: none;
+  text-align: left;
+  font-family: Helvetica;
+}

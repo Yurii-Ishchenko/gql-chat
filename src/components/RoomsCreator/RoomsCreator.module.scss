@@ -1,0 +1,31 @@
+@import "../../styles/variables.scss";
+.rooms_creator_container {
+  max-width: 100%;
+  background-color: $roomsCreatorBGColor;
+}
+.rooms_creator {
+  height: 45px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: $paddingSizeNormal;
+  padding-right: $paddingSizeNormal;
+  color: $textColor;
+  box-sizing: border-box;
+}
+
+.icon {
+  min-width: $paddingSizeNormal;
+}
+
+.button_icon {
+  background-color: inherit;
+  border: none;
+}
+
+.delimiter {
+  margin: 0;
+  border: none;
+  height: 0.5px;
+  background-color: $borderColor;
+}

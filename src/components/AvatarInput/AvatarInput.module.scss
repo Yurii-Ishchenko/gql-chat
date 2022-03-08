@@ -1,0 +1,33 @@
+@import "../../styles//variables.scss";
+.container {
+  @media screen and (max-width: 400px) {
+    width: 100%;
+  }
+}
+
+.logo {
+  color: $textColor;
+  font-size: $fontSizeNormal;
+  font-family: Helvetica;
+  margin-bottom: 10px;
+}
+
+.block {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: $componentWidth;
+  height: 127px;
+  border: 2px dashed #f1e189;
+  margin-bottom: 16px;
+  @media screen and (max-width: 400px) {
+    width: 100%;
+  }
+}
+.input {
+  width: 408px;
+  @media screen and (max-width: 400px) {
+    width: 200px;
+    padding-left: $paddingSmall;
+  }
+}

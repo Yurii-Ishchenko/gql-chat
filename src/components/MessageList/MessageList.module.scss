@@ -1,0 +1,15 @@
+@import "../../styles/variables.scss";
+
+.list {
+  max-width: 100%;
+  padding-left: $paddingSizeNormal;
+  padding-right: $paddingSizeNormal;
+  @media screen and (max-width: 400px) {
+    padding-right: 8px;
+  }
+}
+
+.loading {
+  text-align: center;
+  color: $textColor;
+}

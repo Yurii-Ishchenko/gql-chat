@@ -1,0 +1,16 @@
+@import "../../styles/variables.scss";
+
+.menu_container {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  padding: 12px;
+  flex-direction: column;
+  width: 118px;
+  height: 71px;
+  border-radius: $borderRadius;
+  background-color: white;
+  box-shadow: $boxShadow;
+  margin-top: 5px;
+  box-sizing: border-box;
+}

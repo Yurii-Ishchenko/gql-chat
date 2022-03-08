@@ -1,0 +1,30 @@
+@import "../../styles/variables.scss";
+
+.container {
+  display: flex;
+  height: calc(100% - $marginNormal);
+  width: 100%;
+  margin-top: $marginNormal;
+  box-sizing: border-box;
+}
+
+.roomsContainer {
+  @media screen and (max-width: 400px) {
+    display: none;
+  }
+  width: 335px;
+}
+
+.chatContainer {
+  width: 1105px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-right: 10px;
+  border-left: 1px solid $borderColor;
+  box-sizing: border-box;
+  @media screen and (max-width: 400px) {
+    border-left: none;
+  }
+}

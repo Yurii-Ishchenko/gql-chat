@@ -1,0 +1,22 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixins.scss";
+
+.form {
+  @include customizable-border($borderColor, dashed);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: $paddingSizeNormal;
+  border-radius: 0px 0px 16px 16px;
+  border-top: none;
+}
+
+.input {
+  width: 100%;
+}
+
+.button {
+  display: grid;
+  width: $buttonWidthSmall;
+  height: $buttonHeightNormal;
+}

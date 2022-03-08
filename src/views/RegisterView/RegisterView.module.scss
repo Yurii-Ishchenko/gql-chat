@@ -1,0 +1,42 @@
+@import "../../styles/variables.scss";
+
+.title {
+  text-align: center;
+  color: $textColor;
+  margin-top: 126px;
+  margin-bottom: 31px;
+  font-weight: 400px;
+  font-size: 36px;
+  font-family: Helvetica;
+  @media screen and (max-width: 400px) {
+    margin-top: 50px;
+  }
+}
+
+.form {
+  width: $componentWidth;
+  @media screen and (max-width: 400px) {
+    width: 100%;
+    padding-left: $paddingSmall;
+    padding-right: $paddingSmall;
+  }
+}
+
+.buttonContainer {
+  display: grid;
+  margin-left: auto;
+  width: 136px;
+  height: $buttonHeightNormal;
+}
+
+.loading {
+  margin-top: 100px;
+}
+.avatar_input {
+  @media screen and (max-width: 400px) {
+    display: flex;
+    width: 100%;
+    padding-left: $paddingSmall;
+    padding-right: $paddingSmall;
+  }
+}

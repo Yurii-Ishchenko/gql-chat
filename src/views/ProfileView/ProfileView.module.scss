@@ -1,0 +1,52 @@
+@import "../../styles//variables.scss";
+.container {
+  height: calc(100% - 48px);
+  min-width: 320px;
+  width: 530px;
+  margin-top: 48px;
+  box-sizing: border-box;
+  color: $textColor;
+  font-family: Helvetica;
+  @media screen and (max-width: 400px) {
+    width: 100%;
+    padding-left: $paddingSmall;
+    padding-right: $paddingSmall;
+  }
+}
+
+.title {
+  text-align: center;
+  margin-top: 126px;
+  margin-bottom: 31px;
+  font-weight: 400px;
+  font-size: 36px;
+}
+
+.user_info_container {
+  display: flex;
+  margin-bottom: 32px;
+
+  max-width: 800px;
+}
+.user_info {
+  padding-left: $paddingSizeNormal;
+}
+
+.login {
+  margin-bottom: 8px;
+}
+
+.email {
+  margin-bottom: $paddingSizeNormal;
+}
+
+.stats_title {
+  text-align: center;
+  margin-bottom: $marginSizeNormal;
+}
+
+.loading {
+  font-family: Helvetica;
+  color: $textColor;
+  margin-top: 100px;
+}

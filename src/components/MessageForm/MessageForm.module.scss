@@ -1,0 +1,35 @@
+@import "../../styles/variables.scss";
+
+.form {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 1px;
+  margin-bottom: $paddingSizeNormal;
+  max-width: 100%;
+  padding-left: $paddingSizeNormal;
+  padding-right: $paddingSizeNormal;
+  @media screen and (max-width: 400px) {
+    justify-content: space-between;
+  }
+}
+
+.button {
+  display: grid;
+  min-width: $messageFormHeightNormal;
+  height: $messageFormHeightNormal;
+  @media screen and (max-width: 400px) {
+    min-width: $messageFormHeightSmall;
+    height: $messageFormHeightSmall;
+  }
+}
+
+.textarea {
+  display: contents;
+}
+
+.message_icon {
+  @media screen and (max-width: 400px) {
+    width: $iconWidthSmall;
+  }
+  width: $iconWidthNormal;
+}

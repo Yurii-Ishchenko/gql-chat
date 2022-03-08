@@ -1,0 +1,20 @@
+@import "../../styles/variables.scss";
+
+.scrollbar {
+  display: inline-block;
+  background-color: white;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.scrollbar::-webkit-scrollbar {
+  width: $marginSizeNormal;
+}
+
+.scrollbar::-webkit-scrollbar-track {
+  background-color: rgba(216, 216, 216, 0.31);
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  background-color: #d8d8d8;
+}

@@ -1,0 +1,49 @@
+@import "../../styles/variables.scss";
+.title {
+  text-align: center;
+  color: $textColor;
+  margin-top: 126px;
+  margin-bottom: 31px;
+  font-weight: 400px;
+  font-size: 36px;
+  font-family: Helvetica;
+}
+
+.form {
+  width: $componentWidth;
+  @media screen and (max-width: 400px) {
+    width: 100%;
+    padding-left: $paddingSmall;
+    padding-right: $paddingSmall;
+  }
+}
+
+.btnLinkContainer {
+  width: $componentWidth;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @media screen and (max-width: 400px) {
+    width: 100%;
+    padding-left: $paddingSmall;
+    padding-right: $paddingSmall;
+  }
+}
+
+.link {
+  color: $primaryColor;
+  font-weight: 400px;
+  font-size: 18px;
+}
+
+.button {
+  display: grid;
+  width: $buttonWidthSmall;
+  height: $buttonHeightNormal;
+}
+
+.loading {
+  font-family: Helvetica;
+  color: $textColor;
+  margin-top: 100px;
+}
