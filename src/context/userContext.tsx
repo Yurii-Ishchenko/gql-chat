@@ -14,12 +14,18 @@ interface IContextType {
   activeConvId: number | null;
   setActiveConvId: React.Dispatch<React.SetStateAction<number | null>>;
   loading: boolean;
+  isShowRoomsList: boolean;
+  toggleShowRoomsList: () => void;
 }
 export const userContext = createContext<IContextType>({} as IContextType);
 
 const UserContextProvider = ({ children }: IChildrenProps) => {
   const [user, setUser] = useState<IUser | null>(null);
   const [activeConvId, setActiveConvId] = useState<number | null>(null);
+  const [isShowRoomsList, setIsShowRoomsList] = useState(false);
+  const toggleShowRoomsList = () => {
+    setIsShowRoomsList(!isShowRoomsList);
+  };
   const removeToken = () => localStorage.removeItem("token");
   const [meQuery, { loading }] = useLazyQuery(QUERY_ME, {
     onCompleted: (data) => {
@@ -46,6 +52,8 @@ const UserContextProvider = ({ children }: IChildrenProps) => {
     activeConvId,
     setActiveConvId,
     loading,
+    isShowRoomsList,
+    toggleShowRoomsList,
   };
 
   useEffect(() => {

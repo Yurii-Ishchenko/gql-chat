@@ -11,6 +11,13 @@
 .roomsContainer {
   @media screen and (max-width: 400px) {
     display: none;
+    &.visible {
+      display: block;
+      width: 310px;
+      background-color: white;
+      position: fixed;
+      z-index: 1;
+    }
   }
   width: 335px;
 }

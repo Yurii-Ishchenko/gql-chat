@@ -57,15 +57,3 @@
   @extend .link;
   font-size: 16px;
 }
-
-.rooms_container {
-  display: none;
-
-  @media screen and (max-width: 400px) {
-    display: block;
-    height: calc(100% - $marginNormal);
-    margin-top: $marginNormal;
-    width: 310px;
-    background-color: white;
-  }
-}

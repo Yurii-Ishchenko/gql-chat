@@ -4,13 +4,9 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { userContext } from "./context/userContext";
 import Layout from "./components/Layout/Layout";
-// import LoginView from "./views/loginView/LoginView";
-// import RegisterView from "./views/RegisterView/RegisterView";
 import Header from "./components/Header/Header";
 import RestrictedRoute from "./components/RestrictedRoute/RestrictedRoute";
 import PrivateRoute from "./components/PrivateRoute/PrivateRoute";
-// import ChatBlockView from "./views/ChatBlockView/ChatBlockView";
-// import ProfileView from "./views/ProfileView/ProfileView";
 const LoginView = lazy(
   () =>
     import("./views/loginView/LoginView" /* webpackChunkName: "login-page" */)

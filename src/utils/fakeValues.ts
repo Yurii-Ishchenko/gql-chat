@@ -42,4 +42,6 @@ export const fakeProviderValue = {
   activeConvId: 0,
   setActiveConvId: jest.fn(),
   loading: false,
+  isShowRoomsList: false,
+  toggleShowRoomsList: jest.fn(),
 };
